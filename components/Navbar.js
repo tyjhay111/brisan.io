@@ -49,7 +49,7 @@ function Navbar({ logoUrl: propLogoUrl, onLogoChange }) {
                   }}
                 />
               </div>
-              <span className="text-2xl font-bold text-[var(--primary-color)]">BRISAN</span>
+              <span className="text-2xl font-bold text-[var(--primary-color)]">BRISAN FARMS</span>
             </div>
             
             {/* Desktop Navigation */}
