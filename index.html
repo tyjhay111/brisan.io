@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRISAN - Sustainable Agriculture & Business Solutions</title>
+    <meta name="description" content="Leading agriculture platform producing high-quality food crops and supporting innovative agro-business opportunities. Sustainable farming for a better future.">
+    <meta name="keywords" content="agriculture, food crops, sustainable farming, agro-business, crop production, farming platform">
+    <meta property="og:title" content="BRISAN - Sustainable Agriculture & Business Solutions">
+    <meta property="og:description" content="Leading agriculture platform producing high-quality food crops and supporting innovative agro-business opportunities.">
+    <meta name="twitter:title" content="BRISAN - Sustainable Agriculture & Business Solutions">
+    <meta name="twitter:description" content="Leading agriculture platform producing high-quality food crops and supporting innovative agro-business opportunities.">
+
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #2b9144ff;
+            --secondary-color: #f4f8f4;
+            --accent-color: #111111ff;
+            --text-dark: #2e8d55ff;
+            --text-light: #121611ff;
+        }
+    }
+
+    @layer base {
+        body {
+            @apply font-sans text-[var(--text-dark)] bg-white;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            @apply font-bold text-[var(--text-dark)];
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply px-6 py-3 bg-[var(--primary-color)] text-white rounded-lg font-semibold hover:bg-[#245d30] transition-all duration-300;
+        }
+        
+        .btn-outline {
+            @apply px-6 py-3 border-2 border-[var(--primary-color)] text-[var(--primary-color)] rounded-lg font-semibold hover:bg-[var(--primary-color)] hover:text-white transition-all duration-300;
+        }
+        
+        .section-padding {
+            @apply py-16 md:py-24;
+        }
+        
+        .container-custom {
+            @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Navbar.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/About.js"></script>
+    <script type="text/babel" src="components/Products.js"></script>
+    <script type="text/babel" src="components/BusinessExpansion.js"></script>
+    <script type="text/babel" src="components/WhyChooseUs.js"></script>
+    <script type="text/babel" src="components/Contact.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
